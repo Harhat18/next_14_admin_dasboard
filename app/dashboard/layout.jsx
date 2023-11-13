@@ -1,14 +1,14 @@
-import React from "react";
 import Sidebar from "../ui/dasboard/sidebar/sidebar";
 import Navbar from "../ui/dasboard/navbar/navbar";
+import styles from "../ui/dasboard/dashboard.module.css";
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <div>
+    <div className={styles.container}>
+      <div className={styles.menu}>
         <Sidebar />
       </div>
-      <div>
+      <div className={styles.content}>
         <Navbar />
         {children}
       </div>
